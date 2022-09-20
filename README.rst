@@ -24,6 +24,12 @@ a working demo of the theme in the `theme documentation`_
 .. _Read the Docs: http://www.readthedocs.org
 .. _theme documentation: https://sphinx-rtd-theme.readthedocs.io/en/stable/
 
+
+A Note About this Fork
+=======================
+
+Two Fish Creative forked this repo to customize the SASS theme colors to match our branding. We are not currently planning to make any other substantial modifications to this fork, and may or may not keep it up to date with the origin repo.
+
 Installation
 ============
 

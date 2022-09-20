@@ -2,6 +2,19 @@
 // that are set in wyrm_core/wy_variables.sass. You'll find wyrm in bower_components if you're looking
 // for a reference.
 
+$gray-darker:                         #212529
+$gray-dark:                           #343a40
+$gray:                                #6c757d
+$gray-light:                          #adb5bd
+$gray-lighter:                        #ced4da
+$tfc-cyan:                            #17a2b8
+$tfc-purple:                          #6f42c1
+$tfc-yellow:                          #ffc107
+$tfc-red:                             #dc3545
+$link-color:                          $tfc-cyan
+$link-color-visited:                  $tfc-purple
+$text-code-color:                     $tfc-red
+
 $fa-font-path:                        "~font-awesome/fonts"
 $static-img:                          "../img/"
 
@@ -17,11 +30,11 @@ $text-viewcode-color:                 $green
 $text-codexref-color:                 $text-color
 
 // Definition list colors
-$class-color:                         $blue
+$class-color:                         $tfc-cyan;
 $method-color:                        $gray
 
 // GUI label color
-$guilabel-color:                      $blue
+$guilabel-color:                      $tfc-cyan;
 
 // Footer colors
 $footer-color:                        $text-medium
@@ -45,13 +58,13 @@ $menu-link-active:                    $white
 
 // Navigation colors
 $nav-background-color:                $menu-background-color
-$nav-search-background-color:         $blue
+$nav-search-background-color:         $tfc-cyan
 $nav-search-color:                    $section-background-color
-$nav-link-color:                      $blue
-$nav-link-color-visited:              $purple
+$nav-link-color:                      $tfc-cyan
+$nav-link-color-visited:              $link-color-visited
 $nav-link-color-hover:                lighten($nav-link-color, 6%) !default
 $nav-link-color-alt:                  hsl(33, 100%, 51%)
-$nav-caption:                         lighten($blue, 15%)
+$nav-caption:                         lighten($tfc-cyan, 15%)
 
 // Sidebar colors
 $sidebar-background-color:            $table-stripe-color
@@ -59,7 +72,7 @@ $sidebar-border-color:                $table-border-color
 $sidebar-title-background-color:      $table-border-color
 
 // Sphinx highlight color
-$highlight-color:                     $yellow
+$highlight-color:                     $tfc-yellow
 
 $base-font-family:                    "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif
 $custom-font-family:                  "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif
