@@ -7,13 +7,23 @@ $gray-dark:                           #343a40
 $gray:                                #6c757d
 $gray-light:                          #adb5bd
 $gray-lighter:                        #ced4da
-$tfc-cyan:                            #17a2b8
-$tfc-purple:                          #6f42c1
-$tfc-yellow:                          #ffc107
-$tfc-red:                             #dc3545
-$link-color:                          $tfc-cyan
-$link-color-visited:                  $tfc-purple
-$text-code-color:                     $tfc-red
+
+// [AB] These are colors defined in wy_variables.sass. Most are overriden here with TFC branding.
+//
+// These variables may not be referenced explicitly in this repo, but Wyrm components (e.g. alerts) use them. 
+$green:                               #42bb83
+$offgreen:                            #3bab81 // This isn't an 'official' branding color, but is derived from $green
+$blue:                                #17a2b8
+$purple:                              #6f42c1
+$yellow:                              #ffc107
+$orange:                              #f26248
+$red:                                 #dc3545
+$cobalt:                              #34495E // Unchanged
+$shell:                               #ECF0F1 // Unchanged
+
+$link-color:                          $blue
+$link-color-visited:                  $purple
+$text-code-color:                     $red
 
 $fa-font-path:                        "~font-awesome/fonts"
 $static-img:                          "../img/"
@@ -30,11 +40,11 @@ $text-viewcode-color:                 $green
 $text-codexref-color:                 $text-color
 
 // Definition list colors
-$class-color:                         $tfc-cyan;
+$class-color:                         $blue
 $method-color:                        $gray
 
 // GUI label color
-$guilabel-color:                      $tfc-cyan;
+$guilabel-color:                      $blue
 
 // Footer colors
 $footer-color:                        $text-medium
@@ -58,13 +68,13 @@ $menu-link-active:                    $white
 
 // Navigation colors
 $nav-background-color:                $menu-background-color
-$nav-search-background-color:         $tfc-cyan
+$nav-search-background-color:         $blue
 $nav-search-color:                    $section-background-color
-$nav-link-color:                      $tfc-cyan
+$nav-link-color:                      $blue
 $nav-link-color-visited:              $link-color-visited
 $nav-link-color-hover:                lighten($nav-link-color, 6%) !default
 $nav-link-color-alt:                  hsl(33, 100%, 51%)
-$nav-caption:                         lighten($tfc-cyan, 15%)
+$nav-caption:                         lighten($blue, 15%)
 
 // Sidebar colors
 $sidebar-background-color:            $table-stripe-color
@@ -72,7 +82,7 @@ $sidebar-border-color:                $table-border-color
 $sidebar-title-background-color:      $table-border-color
 
 // Sphinx highlight color
-$highlight-color:                     $tfc-yellow
+$highlight-color:                     $yellow
 
 $base-font-family:                    "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif
 $custom-font-family:                  "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif
