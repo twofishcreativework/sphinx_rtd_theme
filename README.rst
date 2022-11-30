@@ -30,6 +30,8 @@ A Note About this Fork
 
 Two Fish Creative forked this repo to customize the SASS theme colors to match our branding. We are not currently planning to make any other substantial modifications to this fork, and may or may not keep it up to date with the origin repo.
 
+Any updates we make will use the `1.0.1-tfc.x` versioning schema.
+
 Installation
 ============
 

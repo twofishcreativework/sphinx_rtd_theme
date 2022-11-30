@@ -233,6 +233,14 @@
       });
   </script>
 
+  {# Added by TFC. This is used so docs can be used in an iframe, but still inform the parent document about a URL change. #}
+  <script>
+    window.addEventListener('hashchange', () => {
+      window.top.postMessage({eventType: 'hashchange', hash: window.location.hash}, '*');
+    })
+    window.top.postMessage({eventType: 'load', location: window.location.toString()}, '*')
+  </script>
+
   {#- Do not conflict with RTD insertion of analytics script #}
   {%- if not READTHEDOCS %}
     {%- if theme_analytics_id %}
